@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Square from './components/Square';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" w-60 h-60 my-20 mx-auto right-0 left-0">
+      <div className='boxes flex'>
+      <Square />
+      <Square />
+      <Square />
+      </div>
+
+      <div className='boxes flex'>
+      <Square />
+      <Square />
+      <Square />
+      </div>
+
+      <div className='boxes flex'>
+      <Square />
+      <Square />
+      <Square />
+      </div>
+     
     </div>
   );
 }
